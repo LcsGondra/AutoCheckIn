@@ -1,0 +1,6 @@
+@AutoCheckIn.API_HostAddress = http://localhost:5072
+
+GET {{AutoCheckIn.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
