@@ -29,20 +29,37 @@ namespace AutoCheckIn.App
                 Id = dto.Paciente.Id,
                 Nome = dto.Paciente.Nome,
                 CPF = dto.Paciente.CPF,
-                Altura = dto.Paciente.Altura,
-                Peso = dto.Paciente.Peso,
                 DataDeNascimento = dto.Paciente.DataDeNascimento,
-                TipoSanguineo = dto.Paciente.TipoSanguineo
+                Idade = dto.Paciente.Idade,
+                Email = dto.Paciente.Email
+            };
+            paciente.Endereco = new Endereco()
+            {
+                CEP =  dto.Paciente.Endereco.CEP,
+                Rua = dto.Paciente.Endereco.Rua,
+                Numero = dto.Paciente.Endereco.Numero,
+                Complemento = dto.Paciente.Endereco.Complemento,
+                Bairro = dto.Paciente.Endereco.Bairro,
+                Cidade = dto.Paciente.Endereco.Cidade,
+                Estado = dto.Paciente.Endereco.Estado
+                    
             };
             checkIn.AdicionarPaciente(paciente);
 
             Hospital hospital = new Hospital()
             {
                 Id = dto.Hospital.Id,
-                Unidade = dto.Hospital.Unidade,
-                Estado = dto.Hospital.Estado,
-                Endereco = dto.Hospital.Endereco,
-                CEP = dto.Hospital.CEP
+                Unidade = dto.Hospital.Unidade
+            };
+            paciente.Endereco = new Endereco()
+            {
+                CEP = dto.Hospital.Endereco.CEP,
+                Rua = dto.Hospital.Endereco.Rua,
+                Numero = dto.Hospital.Endereco.Numero,
+                Complemento = dto.Hospital.Endereco.Complemento,
+                Bairro = dto.Hospital.Endereco.Bairro,
+                Cidade = dto.Hospital.Endereco.Cidade,
+                Estado = dto.Hospital.Endereco.Estado
             };
             checkIn.AdicionarHospital(hospital);
 

@@ -11,9 +11,9 @@ namespace AutoCheckIn.App.Dto
         public Guid Id { get; set; }
         public string Nome { get; set; }
         public string CPF { get; set; }
-        public int Altura { get; set; }
-        public int Peso { get; set; }
-        public int DataDeNascimento { get; set; }
-        public string TipoSanguineo { get; set;}
+        public string DataDeNascimento { get; set; }
+        public int Idade { get; set; }
+        public string Email { get; set; }
+        public EnderecoDto Endereco { get; set; }
     }
 }

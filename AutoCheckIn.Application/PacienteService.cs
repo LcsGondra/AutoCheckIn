@@ -19,12 +19,20 @@ namespace AutoCheckIn.App
             {
                 Nome = dto.Nome,
                 CPF = dto.CPF,
-                Altura = dto.Altura,
-                Peso = dto.Peso,
                 DataDeNascimento = dto.DataDeNascimento,
-                TipoSanguineo = dto.TipoSanguineo
+                Idade = dto.Idade,
+                Email = dto.Email
             };
-
+            paciente.Endereco = new Endereco()
+            {
+                CEP = dto.Endereco.CEP,
+                Rua = dto.Endereco.Rua,
+                Numero = dto.Endereco.Numero,
+                Complemento = dto.Endereco.Complemento,
+                Bairro = dto.Endereco.Bairro,
+                Cidade = dto.Endereco.Cidade,
+                Estado = dto.Endereco.Estado
+            };
             Repo.Criar(paciente);
             dto.Id = paciente.Id;
 

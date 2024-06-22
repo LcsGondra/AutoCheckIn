@@ -20,25 +20,46 @@ namespace AutoCheckIn.Repo
                 {
                     Id = new Guid("ACFDB825-3A85-4B50-9DA1-20C22915FB0F"),
                     Unidade = "Hospital RJ 1",
-                    Estado = "Rio de Janeiro",
-                    Endereco = "avenida das americas 1234, Rio de janeiro",
-                    CEP = "12345-678"
+                    Endereco =
+                    {
+                        CEP = "12345-678",
+                        Rua = "avenida das americas",
+                        Numero = 1234,
+                        Complemento = "",
+                        Bairro = "barra de tijuca",
+                        Cidade = "Rio de Janeiro",
+                        Estado = "RJ"
+                    }                    
                 });
                 Hospitais.Add(new Hospital()
                 {
                     Id = new Guid("EE9A04A1-72FD-48E8-A376-A3BF0563B050"),
                     Unidade = "Hospital RJ 2",
-                    Estado = "Rio de Janeiro",
-                    Endereco = "Rua dos hospitais 123, Rio de janeiro",
-                    CEP = "12345-679"
+                    Endereco =
+                    {
+                        CEP = "12345-679",
+                        Rua = "Rua dos hospitais",
+                        Numero = 123,
+                        Complemento = "",
+                        Bairro = "Centro",
+                        Cidade = "Rio de Janeiro",
+                        Estado = "RJ"
+                    }
                 });
                 Hospitais.Add(new Hospital()
                 {
                     Id = new Guid("05A1521A-062A-4878-8524-DB6493823A64"),
                     Unidade = "Hospital SP 1",
-                    Estado = "São Paulo",
-                    Endereco = "Rua dos hospitais 321, Guarulhos",
-                    CEP = "98765-432"
+                    Endereco =
+                    {
+                        CEP = "98765-432",
+                        Rua = "Rua dos hospitais",
+                        Numero = 321,
+                        Complemento = "",
+                        Bairro = "Guarulhos",
+                        Cidade = "Sao Paulo",
+                        Estado = "SP"
+                    }
                 });
             }
         }

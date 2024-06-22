@@ -18,6 +18,7 @@ namespace AutoCheckIn.API.Controllers
 
             service.Criar(dto);
 
+            Console.WriteLine(dto.ToString());
             return Created($"/{dto.Id}", dto);
         }
     }
