@@ -9,16 +9,16 @@ namespace AutoCheckIn.Domain.Aggregates
     public class Questionario
     {
         public Guid Id { get; set; }
-        public List<Perguntas> Perguntas { get; set; }
+        public List<PerguntaResposta> Perguntas { get; set; }
 
         public Questionario()
         {
-            Perguntas = new List<Perguntas>();
+            Perguntas = new List<PerguntaResposta>();
         }
 
-        public void AdicionarPerguntas(List<Perguntas> perguntas)
+        public void AdicionarPerguntas(PerguntaResposta perguntas)
         {
-            Perguntas.AddRange(perguntas);
+            Perguntas.Add(perguntas);
         }
     }
 }

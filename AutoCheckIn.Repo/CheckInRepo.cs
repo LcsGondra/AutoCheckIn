@@ -9,7 +9,7 @@ namespace AutoCheckIn.Repo
 {
     public class CheckInRepo
     {
-        private static List<CheckIn> CheckIns;
+        private static List<CheckIn> CheckIns = new List<CheckIn>();
 
         public void Criar(CheckIn checkIn)
         {

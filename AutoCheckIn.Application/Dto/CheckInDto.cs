@@ -12,7 +12,7 @@ namespace AutoCheckIn.App.Dto
         public Guid Id { get; set; }
         public QuestionarioDto Questionario { get; set; }
         public PacienteDto Paciente { get; set; }
-        public string Hospital { get; set; }
+        public HospitalDto Hospital { get; set; }
         public string TipoEmergencia { get; set; }
         public string Prioridade { get; set; }
     }

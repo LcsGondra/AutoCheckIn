@@ -14,6 +14,6 @@ namespace AutoCheckIn.App.Dto
         public int Altura { get; set; }
         public int Peso { get; set; }
         public int DataDeNascimento { get; set; }
-        public int TipoSanguineo { get; set;}
+        public string TipoSanguineo { get; set;}
     }
 }

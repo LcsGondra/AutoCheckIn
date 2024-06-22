@@ -14,7 +14,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\AutoCheckIn.Domain\AutoCheckIn.Domain.csproj" />
+    <ProjectReference Include="..\AutoCheckIn.Application\AutoCheckIn.App.csproj" />
   </ItemGroup>
 
 </Project>

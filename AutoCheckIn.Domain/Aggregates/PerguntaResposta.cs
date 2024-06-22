@@ -1,6 +1,6 @@
 ﻿namespace AutoCheckIn.Domain.Aggregates
 {
-    public class Perguntas
+    public class PerguntaResposta
     {
         public int Numero { get; set; }
         public string Pergunta { get; set; }

@@ -11,8 +11,23 @@ namespace AutoCheckIn.Domain.Aggregates
         public Guid Id { get; set; }
         public Questionario Questionario { get; set; }
         public Paciente Paciente { get; set; }
-        public string Hospital {  get; set; }
+        public Hospital Hospital {  get; set; }
         public string TipoEmergencia { get; set; }
         public string Prioridade { get; set; }
+
+        public CheckIn() { }
+
+        public void AdicionarPaciente(Paciente paciente)
+        {
+            Paciente = paciente;
+        }
+        public void AdicionarQuestionario(Questionario questionario)
+        {
+            Questionario = questionario;
+        }
+        public void AdicionarHospital(Hospital hospital)
+        {
+            Hospital = hospital;
+        }
     }
 }
