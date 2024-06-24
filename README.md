@@ -8,7 +8,6 @@ ESSE PROJETO TRABALHA EM CONJUNTO COM ESSE OUTRO PROJETO, LEMBRE DE USAR OS DOIS
 # AutoCheckIn - Backend em C# .NET 8
 
 ![.NET Version](https://img.shields.io/badge/.NET-8.0-blueviolet)
-![License](https://img.shields.io/github/license/LcsGondra/AutoCheckIn)
 
 Este repositório contém o backend para o projeto AutoCheckIn, desenvolvido em C# com o framework .NET 8. O AutoCheckIn é um sistema que facilita o processo de check-in em hospitais, utilizando informações preenchidas pelos pacientes.
 
