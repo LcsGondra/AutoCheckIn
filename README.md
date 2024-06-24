@@ -50,6 +50,10 @@ AutoCheckInSolution/
    ```bash
    dotnet run
    ```
+3. **Abrindo pelo Visual Studio**
+   Caso prefica basta abrir a solucao usando o visual studio 2022 e apertando f5 ou ctrl f5 para rodar o projeto ou usando a interface:
+   ![start-button](https://github.com/LcsGondra/AutoCheckIn/assets/96592652/b7f099e0-74ca-4daf-8b34-d9e10ef8480c)
+
 
 A API estará disponível em http://localhost:5072
 
