@@ -1,3 +1,10 @@
+# ATENÇÃO 
+
+ESSE PROJETO TRABALHA EM CONJUNTO COM ESSE OUTRO PROJETO, LEMBRE DE USAR OS DOIS AO MESMO TEMPO PARA TER A EXPERIENCIA COMPLETA
+
+- **FRONT-END**: https://github.com/LcsGondra/AutoCheckIn-Front-Vite
+- **BACK-END**: https://github.com/LcsGondra/AutoCheckIn/
+
 # AutoCheckIn - Backend em C# .NET 8
 
 ![.NET Version](https://img.shields.io/badge/.NET-8.0-blueviolet)
