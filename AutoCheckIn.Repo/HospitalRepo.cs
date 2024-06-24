@@ -20,7 +20,7 @@ namespace AutoCheckIn.Repo
                 {
                     Id = new Guid("ACFDB825-3A85-4B50-9DA1-20C22915FB0F"),
                     Unidade = "Hospital RJ 1",
-                    Endereco =
+                    Endereco = new Endereco()
                     {
                         CEP = "12345-678",
                         Rua = "avenida das americas",
@@ -29,13 +29,14 @@ namespace AutoCheckIn.Repo
                         Bairro = "barra de tijuca",
                         Cidade = "Rio de Janeiro",
                         Estado = "RJ"
-                    }                    
+                    }
                 });
+
                 Hospitais.Add(new Hospital()
                 {
                     Id = new Guid("EE9A04A1-72FD-48E8-A376-A3BF0563B050"),
                     Unidade = "Hospital RJ 2",
-                    Endereco =
+                    Endereco = new Endereco()
                     {
                         CEP = "12345-679",
                         Rua = "Rua dos hospitais",
@@ -50,7 +51,7 @@ namespace AutoCheckIn.Repo
                 {
                     Id = new Guid("05A1521A-062A-4878-8524-DB6493823A64"),
                     Unidade = "Hospital SP 1",
-                    Endereco =
+                    Endereco = new Endereco()
                     {
                         CEP = "98765-432",
                         Rua = "Rua dos hospitais",

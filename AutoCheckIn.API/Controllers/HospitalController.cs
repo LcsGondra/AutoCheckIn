@@ -6,19 +6,18 @@ namespace AutoCheckIn.API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class PacienteController : ControllerBase
+    public class HospitalController : ControllerBase
     {
-        private readonly PacienteService service = new PacienteService();
+        private readonly HospitalService service = new HospitalService();
 
-        [HttpPost]
-        public async Task<IActionResult> CadastrarPaciente(PacienteDto dto)
+
+        [HttpGet("All")]
+        public IActionResult GetHospitais()
         {
             if (ModelState.IsValid == false)
                 return BadRequest(ModelState);
 
-            service.Criar(dto);
-
-            return Created($"/{dto.Id}", dto);
+            return Ok(service.GetHospitais());                        
         }
     }
 }
